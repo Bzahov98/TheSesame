@@ -11,6 +11,7 @@ import com.paysafe.hackathon.thesesame.databinding.ActivityLoginBinding
 import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthListener
 import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthViewModel
 import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthViewModelFactory
+import com.paysafe.hackathon.thesesame.ui.utils.IntentUtils
 import com.paysafe.hackathon.thesesame.ui.utils.startHomeActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import org.kodein.di.KodeinAware
@@ -22,7 +23,7 @@ import org.kodein.di.android.kodein
 class LoginActivity : AppCompatActivity(), AuthListener, KodeinAware {
 
     override val kodein by closestKodein()
-    private val factory : AuthViewModelFactory by instance()
+    private val factory: AuthViewModelFactory by instance()
 
 
     private lateinit var viewModel: AuthViewModel
@@ -30,7 +31,8 @@ class LoginActivity : AppCompatActivity(), AuthListener, KodeinAware {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding: ActivityLoginBinding = DataBindingUtil.setContentView(this, R.layout.activity_login)
+        val binding: ActivityLoginBinding =
+            DataBindingUtil.setContentView(this, R.layout.activity_login)
         viewModel = ViewModelProvider(this, factory).get(AuthViewModel::class.java)
         binding.viewmodel = viewModel
 
@@ -43,7 +45,7 @@ class LoginActivity : AppCompatActivity(), AuthListener, KodeinAware {
 
     override fun onSuccess() {
         progressbar.visibility = View.GONE
-        startHomeActivity()
+        IntentUtils.startMainActivity(this)
     }
 
     override fun onFailure(message: String) {
@@ -54,7 +56,7 @@ class LoginActivity : AppCompatActivity(), AuthListener, KodeinAware {
     override fun onStart() {
         super.onStart()
         viewModel.user?.let {
-            startHomeActivity()
+            IntentUtils.startMainActivity(this)
         }
     }
 }

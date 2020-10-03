@@ -15,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="?attr/actionBarSize">
+
         <RelativeLayout
             android:id="@+id/drawer_layout"
             android:layout_width="match_parent"
@@ -22,23 +23,24 @@
             tools:context=".ui.home.HomeActivity">
 
             <TextView
-                android:text="@{viewmodel.user.email}"
-                tools:text="probelalkhan@gmail.com"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:layout_centerInParent="true"
                 android:id="@+id/textViewEmail"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@{viewmodel.user.email}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                tools:text="no data for email" />
 
             <Button
-                android:onClick="@{(v) -> viewmodel.logout(v)}"
-                android:text="Logout"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/textViewEmail"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEmail"
+                android:layout_centerHorizontal="true"
+                android:onClick="@{(v) -> viewmodel.logout(v)}"
+                android:text="Logout" />
 
         </RelativeLayout>
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/nav_view"
             android:layout_width="0dp"
@@ -55,8 +57,7 @@
             android:id="@+id/nav_host_fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@id/nav_view"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
