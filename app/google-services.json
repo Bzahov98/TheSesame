@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620138831693",
+    "firebase_url": "https://thesesame-57916.firebaseio.com",
+    "project_id": "thesesame-57916",
+    "storage_bucket": "thesesame-57916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620138831693:android:a6ed51bca07c393e686104",
+        "android_client_info": {
+          "package_name": "com.paysafe.hackathon.thesesame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620138831693-uvohir0uc5d5bkde20ulj1sv6ebrsc2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.paysafe.hackathon.thesesame",
+            "certificate_hash": "6cab518c3c996ebe3dbdf7607e704bc038678a1f"
+          }
+        },
+        {
+          "client_id": "620138831693-720q7a9oiaads4d016ttmn8mhba7q5a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbfGxlkLSutLIB8z0CNpwRM-sn4q2h7xA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620138831693-720q7a9oiaads4d016ttmn8mhba7q5a3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

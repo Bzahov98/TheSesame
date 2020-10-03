@@ -1,4 +1,4 @@
-package com.paysafe.hackathon.thesesame.ui.home
+package com.paysafe.hackathon.thesesame.ui.fragments.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

@@ -1,4 +1,4 @@
-package com.paysafe.hackathon.thesesame.ui.home
+package com.paysafe.hackathon.thesesame.ui.fragments.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,7 +11,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.paysafe.hackathon.thesesame.R
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.closestKodein
-import org.kodein.di.android.x.kodein
 import org.kodein.di.generic.instance
 
 class HomeFragment : Fragment(), KodeinAware {

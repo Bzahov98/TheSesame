@@ -1,4 +1,4 @@
-package com.paysafe.hackathon.thesesame.ui.notifications
+package com.paysafe.hackathon.thesesame.ui.fragments.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
