@@ -1,7 +1,9 @@
 package com.paysafe.hackathon.thesesame.data.model
 
+import com.google.firebase.database.IgnoreExtraProperties
 import com.google.firebase.firestore.Exclude
 
+@IgnoreExtraProperties
 class User  {
     var uid: String? = null
     var name: String? = null

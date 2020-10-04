@@ -3,7 +3,7 @@ package com.paysafe.hackathon.thesesame.ui.activities.main
 import android.view.View
 import androidx.lifecycle.ViewModel
 import com.paysafe.hackathon.thesesame.data.repositories.UserAuthRepository
-import com.paysafe.hackathon.thesesame.ui.utils.startLoginActivity
+import com.paysafe.hackathon.thesesame.internal.utils.startLoginActivity
 
 class MainActivityViewModel(
     private val repository: UserAuthRepository

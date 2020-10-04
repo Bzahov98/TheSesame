@@ -62,14 +62,8 @@ class AuthViewModel(
             return
         }
         authListener?.onStarted()
-        val disposable = repository.register(email!!, password!!)
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({
-                authListener?.onSuccess()
-            }, {
-                authListener?.onFailure(it.message!!)
-            })
+        val disposable = repository.register(email!!, password!!, authListener)
+
         disposables.add(disposable)
     }
 

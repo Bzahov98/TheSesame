@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.paysafe.hackathon.thesesame.ui.fragments.notifications.NotificationsFragment"
+        android:id="@+id/navigation_my_arts"
+        android:name="com.paysafe.hackathon.thesesame.ui.fragments.myArtItems.MyArtItemsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_art_list_my" />
 </navigation>

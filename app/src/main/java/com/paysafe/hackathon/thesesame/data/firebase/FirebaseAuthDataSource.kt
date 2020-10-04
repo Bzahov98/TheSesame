@@ -3,7 +3,7 @@ package com.paysafe.hackathon.thesesame.data.firebase
 import com.google.firebase.auth.FirebaseAuth
 import io.reactivex.Completable
 
-class FirebaseDataSource {
+class FirebaseAuthDataSource {
 
     private val firebaseAuth: FirebaseAuth by lazy {
         FirebaseAuth.getInstance()

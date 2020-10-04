@@ -1,4 +1,4 @@
-package com.paysafe.hackathon.thesesame.ui.utils
+package com.paysafe.hackathon.thesesame.internal.utils
 
 import android.app.Activity
 import android.content.Context
@@ -14,7 +14,7 @@ import com.paysafe.hackathon.thesesame.ui.activities.main.MainActivity
 
 fun Context.startHomeActivity() =
     Intent(this, MainActivity::class.java).also {
-        it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        //it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(it)
     }
 

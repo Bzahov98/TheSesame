@@ -3,4 +3,15 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_myArts">MyArts</string>
+    <string name="content_description_media_art">art item image</string>
+    <string name="tools_art_title">Painting of Single Sculls at the Catch</string>
+    <string name="tools_art_supporting_text">This Painting of Single Sculls at the Catch is a gorgeous high-quality print on canvas, stretched over 1.25\" depth stretcher bars. Perfect gift for a …</string>
+    <string name="tools_art_secondary_text">153,1$</string>
+    <string name="action_2">Share</string>
+    <string name="action_1">Watched</string>
+    <string name="action_3">More details</string>
+    <string name="add_new">Add new</string>
+    <string name="helperText">helperText</string>
+    <string name="search_hint">search hint</string>
 </resources>

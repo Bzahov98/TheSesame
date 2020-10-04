@@ -13,7 +13,7 @@ import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthListener
 import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthViewModel
 import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthViewModelFactory
 import com.paysafe.hackathon.thesesame.ui.activities.main.MainActivity
-import com.paysafe.hackathon.thesesame.ui.utils.startHomeActivity
+import com.paysafe.hackathon.thesesame.internal.utils.startHomeActivity
 import kotlinx.android.synthetic.main.activity_sign_up.*
 import org.kodein.di.KodeinAware
 import org.kodein.di.generic.instance

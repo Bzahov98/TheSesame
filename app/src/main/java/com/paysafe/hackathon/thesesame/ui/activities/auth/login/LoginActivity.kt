@@ -11,13 +11,11 @@ import com.paysafe.hackathon.thesesame.databinding.ActivityLoginBinding
 import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthListener
 import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthViewModel
 import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthViewModelFactory
-import com.paysafe.hackathon.thesesame.ui.utils.IntentUtils
-import com.paysafe.hackathon.thesesame.ui.utils.startHomeActivity
+import com.paysafe.hackathon.thesesame.internal.utils.IntentUtils
 import kotlinx.android.synthetic.main.activity_login.*
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.closestKodein
 import org.kodein.di.generic.instance
-import org.kodein.di.android.kodein
 
 
 class LoginActivity : AppCompatActivity(), AuthListener, KodeinAware {

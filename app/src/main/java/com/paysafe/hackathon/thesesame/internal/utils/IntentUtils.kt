@@ -1,4 +1,4 @@
-package com.paysafe.hackathon.thesesame.ui.utils
+package com.paysafe.hackathon.thesesame.internal.utils
 
 import android.content.Context
 import android.content.Intent
