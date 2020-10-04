@@ -11,6 +11,7 @@ import com.paysafe.hackathon.thesesame.ui.activities.auth.AuthViewModelFactory
 import com.paysafe.hackathon.thesesame.ui.activities.main.MainActivityViewModelFactory
 import com.paysafe.hackathon.thesesame.ui.fragments.home.HomeViewModelFactory
 import com.paysafe.hackathon.thesesame.ui.fragments.myArtItems.MyArtItemsViewModelFactory
+import com.paysafe.hackathon.thesesame.ui.fragments.portfolio.PortfolioViewModelFactory
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.androidXModule
@@ -38,6 +39,7 @@ class TheSesameApplication : Application(), KodeinAware {
         bind() from provider { HomeViewModelFactory() }
         bind() from provider { MyArtItemsViewModelFactory(instance()) }
         bind() from provider { MainActivityViewModelFactory(instance()) }
+        bind() from provider { PortfolioViewModelFactory(instance()) }
     }
 
     override fun onCreate() {

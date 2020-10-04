@@ -29,7 +29,7 @@
 
             <!-- Media -->
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/allOffersListIcon"
+                android:id="@+id/itemPortfolioImage"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:contentDescription="@string/content_description_media_art"
@@ -47,7 +47,7 @@
 
                 <!-- Title, secondary and supporting text -->
                 <TextView
-                    android:id="@+id/allOffersListTitle"
+                    android:id="@+id/itemPortfolioTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tools_art_title"

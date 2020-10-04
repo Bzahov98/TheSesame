@@ -5,7 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_myArts">MyArts</string>
     <string name="content_description_media_art">art item image</string>
-    <string name="tools_art_title">Painting of Single Sculls at the Catch</string>
+    <string name="tools_art_title">Painting of Single Sculls</string>
     <string name="tools_art_supporting_text">This Painting of Single Sculls at the Catch is a gorgeous high-quality print on canvas, stretched over 1.25\" depth stretcher bars. Perfect gift for a …</string>
     <string name="tools_art_secondary_text">153,1$</string>
     <string name="action_2">Share</string>
@@ -14,4 +14,30 @@
     <string name="add_new">Add new</string>
     <string name="helperText">helperText</string>
     <string name="search_hint">search hint</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dialog_hint_enter_name">Title</string>
+    <string name="enter_author">Author</string>
+    <string name="brief_description">Brief description</string>
+    <string name="dummy_pic_url"><![CDATA[https://firebasestorage.googleapis.com/v0/b/thesesame-57916.appspot.com/o/row_art_img.jpg?alt=media&token=60addd15-e794-49ca-8c93-bd287ec77145]]></string>
+    <string name="tools_art_currency">EUR</string>
+    <string name="photo_hint">Pick up to 12 images</string>
+    <string name="photo_button_hint">pick Images</string>
+    <string name="invoice_button_hint">Pick Invoice</string>
+    <string name="pick_button_hint">Pick</string>
+    <string name="Equity_description">Equity</string>
+    <string name="price_share_description">Price of single share</string>
+    <string name="title_portfolio">Portfolio</string>
+    <string name="text_label_my_inv">My Investments</string>
+    <string name="text_label_listed">Listed Items</string>
+    <string name="profit">+23.2%</string>
+    <string name="portfolioPrice">EUR 3723.21</string>
+    <string name="portfolioPrice2">EUR 3723.21</string>
+    <string name="add_new_plus">+ Add New</string>
+    <string name="graphs_money_unit_abbreviation">$</string>
+    <string name="graphs_profit_series_degree">profit</string>
+    <string name="graphs_default_axis_x_name">Time</string>
+    <string name="graphs_axis_y_name_speed">Price</string>
+    <string name="graphs_axis_y_name_speed2">Price2</string>
+    <string name="graphs_price_title">Dashboard $2313.13 +31.221</string>
 </resources>

@@ -3,8 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_portfolio">
 
+    <fragment
+        android:id="@+id/navigation_portfolio"
+        android:name="com.paysafe.hackathon.thesesame.ui.fragments.portfolio.PortfolioFragment"
+        android:label="@string/title_portfolio"
+        tools:layout="@layout/fragment_portfolio" />
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.paysafe.hackathon.thesesame.ui.fragments.home.HomeFragment"
@@ -20,6 +25,6 @@
     <fragment
         android:id="@+id/navigation_my_arts"
         android:name="com.paysafe.hackathon.thesesame.ui.fragments.myArtItems.MyArtItemsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_myArts"
         tools:layout="@layout/fragment_art_list_my" />
 </navigation>

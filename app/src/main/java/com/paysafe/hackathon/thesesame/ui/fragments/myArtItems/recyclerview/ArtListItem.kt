@@ -10,7 +10,8 @@ import com.xwray.groupie.kotlinandroidextensions.ViewHolder
 import kotlinx.android.synthetic.main.item_all_offers.view.*
 
 class ArtListItem(
-    val data: ArtItemData
+    val data: ArtItemData,
+    val isAddButton : Boolean = false
 ) : Item(){
     override fun getLayout() = R.layout.item_all_offers
     override fun bind(viewHolder: ViewHolder, position: Int) {
@@ -21,13 +22,15 @@ class ArtListItem(
     }
 
     private fun updateViewData(view: View) {
-        view.allOffersListDescription.text = data.description
-        view.allOffersListTitle.text = data.title
-        view.allOffersListPrice.text = String.format("%.1f %",data.price)
+        if(isAddButton){
 
+        }
+        view.allOffersListDescription.text = data.description
+        view.itemPortfolioTitle.text = data.title
+        view.allOffersListPrice.text = "${data.price.toBigDecimal()} ${data.currency}"
             Glide.with(view.context)
                 .asBitmap()
-                .load(R.drawable.check)
-                .into(view.allOffersListIcon)
+                .load(data.listPhotos.first())
+                .into(view.itemPortfolioImage)
     }
 }

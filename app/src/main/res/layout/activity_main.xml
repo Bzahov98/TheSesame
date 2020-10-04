@@ -13,8 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="?attr/actionBarSize">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:id="@+id/drawer_layout"
@@ -26,8 +25,9 @@
                 android:id="@+id/textViewEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
                 android:text="@{viewmodel.user.email}"
+                android:visibility="gone"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 tools:text="no data for email" />
 
@@ -36,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textViewEmail"
                 android:layout_centerHorizontal="true"
+                android:visibility="gone"
                 android:onClick="@{(v) -> viewmodel.logout(v)}"
                 android:text="Logout" />
 

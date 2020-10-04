@@ -27,7 +27,13 @@ class MainActivity : AppCompatActivity(), KodeinAware {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
+
+        val binding: ActivityMainBinding =
+            DataBindingUtil.setContentView(this, R.layout.activity_main)
+        viewModel = ViewModelProvider(this, factory).get(MainActivityViewModel::class.java)
+        binding.viewmodel = viewModel
+
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 //        navController = Navigation.findNavController(this, nav_host_fragment.id)
 
@@ -47,10 +53,7 @@ class MainActivity : AppCompatActivity(), KodeinAware {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        val binding: ActivityMainBinding =
-            DataBindingUtil.setContentView(this, R.layout.activity_main)
-        viewModel = ViewModelProvider(this, factory).get(MainActivityViewModel::class.java)
-        binding.viewmodel = viewModel
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

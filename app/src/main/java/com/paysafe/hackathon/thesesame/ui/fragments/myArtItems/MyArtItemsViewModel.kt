@@ -12,7 +12,7 @@ class MyArtItemsViewModel(val itemsRepository: ItemsRepository) : ViewModel() {
 private val TAG = "MyArtItemsViewModel"
 
     private val _listData = MutableLiveData<List<ArtItemData>>().apply {
-        postValue(listOf(ArtItemData(),ArtItemData("sss","ww",31.1,"ss",null,null)))
+        postValue(listOf(ArtItemData(),ArtItemData("sss","ww",31.1,"ss")))
     }
     private val _text = MutableLiveData<String>().apply {
         value = "This is UploadOffer Fragment"
@@ -20,7 +20,7 @@ private val TAG = "MyArtItemsViewModel"
     //    private val _listData = MutableLiveData<DatabaseResponce>().apply {
 //        postValue(listOf(ArtListItem()))
     val text: LiveData<String> = _text
-    val listData: LiveData<List<ArtItemData>> = _listData
+        val listData: LiveData<List<ArtItemData>> = _listData
 
     fun createNewItem(artItemData: ArtItemData) {
         itemsRepository.createNewItem(artItemData)

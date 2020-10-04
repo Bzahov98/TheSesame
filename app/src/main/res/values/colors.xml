@@ -22,4 +22,6 @@
     <color name="cards_and_dialogs_color">@android:color/white</color>
     <color name="quantum_grey_600">#757575</color>
     <color name="gray_background">#E2E2E2</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="green_profit">#6CDD0D</color>
 </resources>
